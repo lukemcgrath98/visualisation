@@ -24,7 +24,7 @@ export default {
   email: null,
   hireable: null,
   bio: null,
-  twitter_username: null,
+  twitter_username: "luke_mcgrath",
   public_repos: 2,
   public_gists: 0,
   followers: 0,
