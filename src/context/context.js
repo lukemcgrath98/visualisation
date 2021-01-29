@@ -6,11 +6,14 @@ import axios from 'axios';
 
 const rootUrl = 'https://api.github.com';
 
-const GitContext = React.createContext();
+const GithubContext = React.createContext();
 
-const GitProvider = ({children}) =>{
+const GithubProvider = ({ children }) => {
     return (
-        <GitContext.Provider value ={'hi'}>{children}</
-        GitContext.Provider>
+        <GithubContext.Provider value ={'hi'}>{children}</
+        GithubContext.Provider>
     );
 }
+
+
+export{ GithubProvider, GithubContext };
