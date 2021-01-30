@@ -25,7 +25,6 @@ const checkRequests = () => {
     axios(`${rootUrl}/rate_limit`)
     .then(({data}) => {
         let {rate:{remaining}} = data;
-        remaining = 0;
         setRequests(remaining);
         if(remaining == 0){
             toggleError(true,'sorry you have exceeded your hourly rate limit!');
@@ -34,8 +33,8 @@ const checkRequests = () => {
     .catch((err) => console.log(err));
 };
 
-function toggleError(show,msg){
-    setError({show ,msg});
+function toggleError(show = false, msg = ''){
+    setError({show, msg});
 }
 // error
 

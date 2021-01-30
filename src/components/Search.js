@@ -25,7 +25,7 @@ const Search = () => {
           {requests > 0 && <button type="submit">search</button>}
         </div>
       </form>
-      <h3>requests : {requests} / 60}</h3>
+      <h3>requests : {requests} / 60</h3>
     </Wrapper>
   </section>;
 };
